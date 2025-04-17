@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Noah Jansen | Web Developer</title>
+    <meta name="description" content="Professional portfolio of Prince Noah Jansen, Web Developer">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-showcase.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Meta tags for SEO -->
+    <meta name="author" content="Prince Noah Jansen">
+    <meta name="keywords" content="web developer, portfolio, frontend, developer, Prince Noah Jansen">
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Prince Noah Jansen | Web Developer">
+    <meta property="og:description" content="Professional portfolio of Prince Noah Jansen, Web Developer">
+    <meta property="og:type" content="website">
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#" class="logo">Prince Noah Jansen</a>
+                
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav-toggle">
+                    <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu (hidden by default) -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="mobile-nav-links">
+                    <li><a href="#" class="mobile-nav-link active">Home</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hi, I'm <span class="accent">Prince Noah Jansen</span></h1>
+                        <p class="hero-description">Young web developer studying and hustling. Building creative digital experiences that make an impact.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img id="profile-img" src="" alt="Prince Noah Jansen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-description">Check out some of my recent web development projects. Hover over each project to see a preview.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">RSS Feed Reader</h3>
+                            <p class="project-description">A modern retail store website with a clean interface and shopping functionality.</p>
+                            <span class="view-project">View Project →</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <img src="images/rss-preview.png" alt="Preview of RSS Feed Reader">
+                                <div class="project-overlay-content">
+                                    <h3 class="project-title">RSS Feed Reader</h3>
+                                    <p class="project-description">A modern retail store website with a clean interface and shopping functionality.</p>
+                                    <a href="https://bl4ckh4rmony.github.io/rss/" target="_blank" class="btn btn-small">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bl4ckh4rmony.github.io/rss/" target="_blank" class="project-link" aria-label="View RSS Feed Reader project"></a>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Rock Scissors Paper</h3>
+                            <p class="project-description">An elegant restaurant website with menu and reservation features.</p>
+                            <span class="view-project">View Project →</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <img src="images/rs-preview.png" alt="Preview of Rock Scissors Paper">
+                                <div class="project-overlay-content">
+                                    <h3 class="project-title">Rock Scissors Paper</h3>
+                                    <p class="project-description">An elegant restaurant website with menu and reservation features.</p>
+                                    <a href="https://bl4ckh4rmony.github.io/rs/" target="_blank" class="btn btn-small">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bl4ckh4rmony.github.io/rs/" target="_blank" class="project-link" aria-label="View Rock Scissors Paper project"></a>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Stone Paper Scissors</h3>
+                            <p class="project-description">A professional service provider website with testimonials and service offerings.</p>
+                            <span class="view-project">View Project →</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <img src="images/sps-preview.png" alt="Preview of Stone Paper Scissors">
+                                <div class="project-overlay-content">
+                                    <h3 class="project-title">Stone Paper Scissors</h3>
+                                    <p class="project-description">A professional service provider website with testimonials and service offerings.</p>
+                                    <a href="https://bl4ckh4rmony.github.io/sps/" target="_blank" class="btn btn-small">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bl4ckh4rmony.github.io/sps/" target="_blank" class="project-link" aria-label="View Stone Paper Scissors project"></a>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Creative Agency</h3>
+                            <p class="project-description">A modern creative agency website with portfolio and contact features.</p>
+                            <span class="view-project">View Project →</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-preview">
+                                <img src="images/cas-preview.png" alt="Preview of Creative Agency">
+                                <div class="project-overlay-content">
+                                    <h3 class="project-title">Creative Agency</h3>
+                                    <p class="project-description">A modern creative agency website with portfolio and contact features.</p>
+                                    <a href="https://bl4ckh4rmony.github.io/cas/" target="_blank" class="btn btn-small">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bl4ckh4rmony.github.io/cas/" target="_blank" class="project-link" aria-label="View Creative Agency project"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sneaker Project Carousel -->
+        <section id="sneaker-project" class="sneaker-project">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sneaker E-commerce Project</h2>
+                    <p class="section-description">A custom e-commerce platform for sneaker enthusiasts with modern design and seamless shopping experience.</p>
+                </div>
+                
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div id="sneaker-carousel" class="carousel">
+                            <div class="carousel-slide active">
+                                <img src="images/sneakers/sneaker-1.png" alt="Sneaker store screenshot 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/sneakers/sneaker-2.png" alt="Sneaker store screenshot 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/sneakers/sneaker-3.png" alt="Sneaker store screenshot 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/sneakers/sneaker-4.png" alt="Sneaker store screenshot 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/sneakers/sneaker-5.png" alt="Sneaker store screenshot 5">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/sneakers/sneaker-6.png" alt="Sneaker store screenshot 6">
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Navigation -->
+                        <button id="prev-slide" class="carousel-nav prev" aria-label="Previous slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button id="next-slide" class="carousel-nav next" aria-label="Next slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                        <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                        <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                        <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+                        <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+                        <button class="indicator" data-slide="5" aria-label="Go to slide 6"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-description">Professional web development services tailored to your needs.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Custom website development using modern technologies and frameworks. I create responsive, user-friendly websites that look great on all devices.</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Responsive Design</h3>
+                        <p class="service-description">Mobile-first design approach ensuring your website works flawlessly across all screen sizes, from smartphones to desktop monitors.</p>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="service-title">E-commerce Solutions</h3>
+                        <p class="service-description">Custom online store development with secure payment processing, inventory management, and user-friendly shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (simplified, no form) -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-description">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-label">Email</h4>
+                            <a href="mailto:princejansen47@gmail.com" class="contact-value">princejansen47@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-label">Phone</h4>
+                            <a href="tel:+27793916930" class="contact-value">+27 79 391 6930</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-label">Instagram</h4>
+                            <a href="https://www.instagram.com/noah_dev24/" target="_blank" class="contact-value">@noah_dev24</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© <span id="current-year"></span> Prince Noah Jansen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

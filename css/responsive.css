@@ -1,0 +1,244 @@
+/* Responsive design enhancements */
+
+/* Base responsive styles */
+@media (max-width: 639px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.125rem;
+    }
+    
+    .profile-image {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .carousel-wrapper {
+        height: 400px;
+    }
+    
+    .carousel-nav {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* Small devices (640px and up) */
+@media (min-width: 640px) and (max-width: 767px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-item {
+        width: calc(50% - 1rem);
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .mobile-nav-toggle {
+        display: none;
+    }
+    
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    
+    .hero-text {
+        flex: 1;
+    }
+    
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Large devices (1024px and up) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .navbar-content {
+        height: 5rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero {
+        padding: 5rem 0;
+    }
+    
+    .hero-content {
+        gap: 4rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.25rem;
+    }
+    
+    .profile-image {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .project-card {
+        height: 320px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .carousel-wrapper {
+        height: 600px;
+    }
+}
+
+/* Extra large devices (1280px and up) */
+@media (min-width: 1280px) {
+    .container {
+        padding: 0;
+    }
+    
+    .projects-grid {
+        gap: 3rem;
+    }
+    
+    .services-grid {
+        gap: 3rem;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .project-card:hover {
+        transform: none;
+    }
+    
+    .project-card:active {
+        transform: translateY(-5px);
+    }
+    
+    .carousel-nav {
+        opacity: 1;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .service-card:active {
+        transform: translateY(-5px);
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar, .footer, .carousel-nav, .carousel-indicators, .btn {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .hero, .projects, .sneaker-project, .services, .contact {
+        padding: 1rem 0 !important;
+        page-break-inside: avoid;
+    }
+    
+    .project-card, .service-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .project-overlay {
+        display: none !important;
+    }
+}

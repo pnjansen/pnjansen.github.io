@@ -1,0 +1,102 @@
+/* Additional styles for sneaker carousel */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    background-color: var(--bg-tertiary);
+    height: 500px;
+}
+
+.carousel {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-tertiary);
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(0.95);
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide.active img {
+    transform: scale(1);
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0.7;
+}
+
+.carousel-nav:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev {
+    left: 1rem;
+}
+
+.carousel-nav.next {
+    right: 1rem;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--text-tertiary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.indicator:hover {
+    transform: scale(1.2);
+}
+
+.indicator.active {
+    background-color: var(--accent);
+    transform: scale(1.2);
+}

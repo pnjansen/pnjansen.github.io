@@ -1,0 +1,168 @@
+/* Additional styles for enhanced portfolio showcase hover effects */
+.project-card {
+    position: relative;
+    height: 300px;
+    background-color: var(--bg-tertiary);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px var(--shadow);
+}
+
+.project-content {
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    background-color: var(--bg-tertiary);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-content {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.view-project {
+    color: var(--accent);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.view-project::after {
+    content: '→';
+    margin-left: 0.25rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .view-project::after {
+    transform: translateX(4px);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .project-preview img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.project-overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: white;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-card:hover .project-overlay-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-overlay-content .project-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.project-overlay-content .project-description {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.project-overlay-content .btn {
+    display: inline-block;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s, background-color 0.3s;
+}
+
+.project-card:hover .project-overlay-content .btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-link {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Add a subtle shine effect on hover */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    transform: skewX(-25deg);
+    z-index: 4;
+    transition: left 0.7s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+    left: 125%;
+}
