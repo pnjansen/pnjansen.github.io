@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to start automatic slideshow
     function startInterval() {
-        interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        interval = setInterval(nextSlide, 10000); // Change slide every 10 seconds to reduce loading perception
     }
 
     // Function to reset interval

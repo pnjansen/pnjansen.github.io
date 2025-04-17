@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearElement.textContent = new Date().getFullYear();
     }
     
-    // Fetch profile image from Unsplash
+    // Fetch profile image from Unsplash - COMMENTED OUT to preserve original image
+    /*
     const profileImg = document.getElementById('profile-img');
     if (profileImg) {
         // Use Unsplash source for a random developer profile image
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             profileImg.src = 'https://via.placeholder.com/300x300?text=Developer+Profile';
         };
     }
+    */
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
